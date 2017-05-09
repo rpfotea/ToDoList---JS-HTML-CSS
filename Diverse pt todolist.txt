@@ -1,0 +1,36 @@
+http://bootsnipp.com/snippets/featured/fancy-bootstrap-checkboxes
+
+<div class="[ form-group ]">
+            <input type="checkbox" name="fancy-checkbox-success" id="fancy-checkbox-success" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="fancy-checkbox-success" class="[ btn btn-success ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="fancy-checkbox-success" class="[ btn btn-default active ]">
+                    Success Checkbox
+                </label>
+            </div>
+        </div>
+		
+		http://bootsnipp.com/tags/checkbox
+		
+//////////////////////////////////////////////////////////////////////////////////////////
+function newElement() {
+  
+  var inputValue = document.getElementById("myInput").value;
+  var li = document.createElement("li");
+  var nt1 = document.createTextNode(inputValue);
+  li.appendChild(nt1);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myList").appendChild(li);
+		
+  }
+  
+  document.getElementById("myInput").value = "";
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  
+}
