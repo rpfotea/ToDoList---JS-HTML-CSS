@@ -15,17 +15,20 @@ body {
 
 .section h1{
 	text-align: center;
-	font-style: bold;
+	font-weight:bold;
 }
 
 /* Input field */
 input {
     border: none;
-    width: 80%;
     padding: 10px;
     float: left;
     font-size: 16px;
 }
+
+    input[type=text] {
+        width: 80%;
+    }
 
 /* Add Button*/
 .addBtn {
@@ -37,7 +40,7 @@ input {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 /* zebra - stripes*/
@@ -55,3 +58,18 @@ ul li:hover {
 	list-style-type: none;
 	
 }
+
+/*decoration for new item*/
+.c1 {
+    font-style:italic;
+    color: blue;
+    font-size:25px;
+}
+
+/*change text decoration for completed item*/
+.c2 {
+    text-decoration: line-through;
+    font-size: 25px;
+}
+
+
